@@ -1,0 +1,6 @@
+<h2>Genres</h2>
+<ul class='list-unstyled'>
+	{{#each genre in model}}
+		<li>{{#link-to 'genre' genre class='label label-primary'}}{{genre.name}}{{/link-to}}</li>
+	{{/each}}
+</ul>

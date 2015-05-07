@@ -2,6 +2,15 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' liveReloadPort",
+      'font-src': "'self'",
+      'connect-src': "'self' liveReloadPort localhost:4200", 
+      'img-src': "'self' images.amazon.com",
+      'style-src': "'self' 'unsafe-inline'", 
+      'media-src': "'self'"
+    },
     modulePrefix: 'reading-list',
     environment: environment,
     baseURL: '/',

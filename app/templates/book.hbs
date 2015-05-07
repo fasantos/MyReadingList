@@ -1,0 +1,6 @@
+<ol class='breadcrumb'>
+	<li>{{#link-to 'index'}}Books{{/link-to}}</li>
+	<li class='active'>{{model.title}}</li>
+</ol>
+{{book-details book=model tag='div' class='row'}}
+{{outlet}}

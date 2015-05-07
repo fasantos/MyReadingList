@@ -1,0 +1,18 @@
+<div class='col-sm-3'>
+  <a {{bind-attr href='book.url'}} target='_blank'>
+    <img {{bind-attr src='book.image'}} />
+  </a>
+  <p class='text-center rating'><strong>{{book.rating}}</strong>/5</p>
+</div>
+
+<div class='col-sm-9'>
+  <h3>{{#link-to 'book' book.id}}{{book.title}}{{/link-to}}</h3>
+  <p class='text-muted'><em>Written by {{book.author}}</em></p>
+
+  <div>
+    <p>{{book.review}}</p>
+  </div>
+
+  <span>{{#link-to 'genre' book.genre class='label label-primary'}}{{book.genre.name}}{{/link-to}}</span>
+</div>
+    

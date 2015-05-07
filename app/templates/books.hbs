@@ -1,0 +1,7 @@
+<ul class='list-unstyled'>
+	{{#each book in model}}
+		<li>{{book-details book=book tag='li' class='row'}}</li>
+	{{else}}
+		<li>There are no books</li>
+	{{/each}}
+</ul>
